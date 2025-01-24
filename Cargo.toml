@@ -80,17 +80,17 @@ ethereum = { version = "0.15.0", default-features = false }
 
 # Frontier
 # (wasm)
-fp-rpc = { git = "https://github.com/AstarNetwork/frontier", branch = "stable2407", default-features = false }
-pallet-evm = { git = "https://github.com/AstarNetwork/frontier", branch = "stable2407", default-features = false, features = ["forbid-evm-reentrancy"] }
-fp-evm = { git = "https://github.com/AstarNetwork/frontier", branch = "stable2407", default-features = false }
+fp-rpc = { git = "https://github.com/paritytech/frontier", branch = "stable2407", default-features = false }
+pallet-evm = { git = "https://github.com/paritytech/frontier", branch = "stable2407", default-features = false, features = ["forbid-evm-reentrancy"] }
+fp-evm = { git = "https://github.com/paritytech/frontier", branch = "stable2407", default-features = false }
 
 # (native)
-fc-consensus = { git = "https://github.com/AstarNetwork/frontier", branch = "stable2407" }
-fc-db = { git = "https://github.com/AstarNetwork/frontier", branch = "stable2407" }
-fc-api = { git = "https://github.com/AstarNetwork/frontier", branch = "stable2407" }
-fc-rpc = { git = "https://github.com/AstarNetwork/frontier", branch = "stable2407", features = ["rpc-binary-search-estimate", "txpool"] }
-fc-rpc-core = { git = "https://github.com/AstarNetwork/frontier", branch = "stable2407" }
-fc-storage = { git = "https://github.com/AstarNetwork/frontier", branch = "stable2407" }
+fc-consensus = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
+fc-db = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
+fc-api = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
+fc-rpc = { git = "https://github.com/paritytech/frontier", branch = "stable2407", features = ["rpc-binary-search-estimate", "txpool"] }
+fc-rpc-core = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
+fc-storage = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
 
 ## Moonbeam tracing
 ## (wasm)
