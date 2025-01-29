@@ -64,7 +64,7 @@ pub enum RuntimeEvent {
 		context: Context,
 		// This needs to be marshalled in the runtime no matter what.
 		opcode: Vec<u8>,
-		// We can use ExitReason with `with-codec` feature,
+		// We can use ExitReason with `with-scale` feature,
 		position: Result<u64, ExitReason>,
 		stack: Option<Stack>,
 		memory: Option<Memory>,
