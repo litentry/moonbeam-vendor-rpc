@@ -61,7 +61,7 @@ where
 			.graph
 			.validated_pool()
 			.ready()
-			.map(|in_pool_tx| in_pool_tx.data().clone())
+			.map(|in_pool_tx| Arc::try_unwrap(in_pool_tx.data().clone()).unwrap_or_else(|arc| (*arc).clone()))
 			.collect();
 
 		// Collect transactions in the future validated pool.
@@ -70,7 +70,7 @@ where
 			.validated_pool()
 			.futures()
 			.iter()
-			.map(|(_hash, extrinsic)| extrinsic.clone())
+			.map(|(_hash, extrinsic)| Arc::try_unwrap(extrinsic.clone()).unwrap_or_else(|arc| (*arc).clone()))
 			.collect();
 
 		// Use the runtime to match the (here) opaque extrinsics against ethereum transactions.

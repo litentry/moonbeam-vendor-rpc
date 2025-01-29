@@ -21,76 +21,76 @@ members = [
 # General deps
 # (wasm)
 parity-scale-codec = { version = "3.6.12", default-features = false, features = ["derive"] }
-scale-info = { version = "2.5.0", default-features = false, features = ["derive"] }
-log = { version = "0.4.20", default-features = false }
-environmental = { version = "1.1.2", default-features = false }
-sha3 = { version = "0.10.1", default-features = false }
+scale-info = { version = "2.11.6", default-features = false, features = ["derive"] }
+log = { version = "0.4.22", default-features = false }
+environmental = { version = "1.1.4", default-features = false }
+sha3 = { version = "0.10.8", default-features = false }
 hex = { version = "0.4.3", default-features = false }
 
 # (native)
-futures = { version = "0.3.30" }
+futures = { version = "0.3.31" }
 serde = { version = "1.0.151", default-features = false, features = ["derive", "alloc"] }
 serde_json = { version = "1.0.121", default-features = false }
-tokio = { version = "1.24.2", features = ["macros", "sync"] }
-jsonrpsee = { version = "0.23.2", features = ["server"] }
+tokio = { version = "1.43.0", features = ["macros", "sync"] }
+jsonrpsee = { version = "0.24.7", features = ["server"] }
 hex-literal = "0.4.1"
-rlp = "0.5"
-tracing = "0.1.34"
-impl-trait-for-tuples = "0.2.2"
-docify = { version = "0.2.8" }
+rlp = { version = "0.6", default-features = false }
+tracing = "0.1.41"
+impl-trait-for-tuples = "0.2.3"
+docify = { version = "0.2.9" }
 
 # Substrate
 # (wasm)
-sp-core = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-sp-io = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-sp-runtime = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-sp-std = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-sp-api = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-sp-block-builder = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-sp-runtime-interface = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-sp-transaction-pool = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-sp-externalities = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
+sp-core = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+sp-io = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+sp-runtime = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+sp-std = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+sp-api = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+sp-block-builder = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+sp-runtime-interface = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+sp-transaction-pool = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+sp-externalities = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
 
 # (native)
-sp-blockchain = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407" }
-sc-client-api = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407" }
-sc-network = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407" }
-sc-transaction-pool = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407" }
-sc-transaction-pool-api = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407" }
-sc-utils = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407" }
-substrate-prometheus-endpoint = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407" }
-substrate-frame-rpc-system = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407" }
+sp-blockchain = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+sc-client-api = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412" }
+sc-network = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412" }
+sc-transaction-pool = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412" }
+sc-transaction-pool-api = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412" }
+sc-utils = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412" }
+substrate-prometheus-endpoint = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412" }
+substrate-frame-rpc-system = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412" }
 
 # Substrate pallets
 # (wasm)
-pallet-balances = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-pallet-utility = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-frame-support = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-frame-system = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
-frame-benchmarking = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2407", default-features = false }
+pallet-balances = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+pallet-utility = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+frame-support = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+frame-system = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
+frame-benchmarking = { git = "https://github.com/paritytech/polkadot-sdk", branch = "stable2412", default-features = false }
 
 # EVM & Ethereum
 # (wasm)
 # To make it compatible with frontier
-evm = { version = "0.41.1", default-features = false }
-evm-gasometer = { version = "0.41.0", default-features = false }
-evm-runtime = { version = "0.41.0", default-features = false }
-ethereum-types = { version = "0.14", default-features = false }
-ethereum = { version = "0.15.0", default-features = false }
+evm = { git = "https://github.com/rust-ethereum/evm", branch = "v0.x", default-features = false }
+evm-gasometer = { git = "https://github.com/rust-ethereum/evm", branch = "v0.x", default-features = false }
+evm-runtime = { git = "https://github.com/rust-ethereum/evm", branch = "v0.x", default-features = false }
+ethereum-types = { version = "0.15", default-features = false }
+ethereum = { git = "https://github.com/rust-ethereum/ethereum", rev = "3be0d8fd4c2ad1ba216b69ef65b9382612efc8ba", default-features = false }
 
 # Frontier
 # (wasm)
-fp-rpc = { git = "https://github.com/paritytech/frontier", branch = "stable2407", default-features = false }
-pallet-evm = { git = "https://github.com/paritytech/frontier", branch = "stable2407", default-features = false, features = ["forbid-evm-reentrancy"] }
-fp-evm = { git = "https://github.com/paritytech/frontier", branch = "stable2407", default-features = false }
+fp-rpc = { git = "https://github.com/CESSProject/frontier", branch = "stable2412", default-features = false }
+pallet-evm = { git = "https://github.com/CESSProject/frontier", branch = "stable2412", default-features = false, features = ["forbid-evm-reentrancy"] }
+fp-evm = { git = "https://github.com/CESSProject/frontier", branch = "stable2412", default-features = false }
 
 # (native)
-fc-consensus = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
-fc-db = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
-fc-api = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
-fc-rpc = { git = "https://github.com/paritytech/frontier", branch = "stable2407", features = ["rpc-binary-search-estimate", "txpool"] }
-fc-rpc-core = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
-fc-storage = { git = "https://github.com/paritytech/frontier", branch = "stable2407" }
+fc-consensus = { git = "https://github.com/CESSProject/frontier", branch = "stable2412" }
+fc-db = { git = "https://github.com/CESSProject/frontier", branch = "stable2412" }
+fc-api = { git = "https://github.com/CESSProject/frontier", branch = "stable2412" }
+fc-rpc = { git = "https://github.com/CESSProject/frontier", branch = "stable2412", features = ["rpc-binary-search-estimate", "txpool"] }
+fc-rpc-core = { git = "https://github.com/CESSProject/frontier", branch = "stable2412" }
+fc-storage = { git = "https://github.com/CESSProject/frontier", branch = "stable2412" }
 
 ## Moonbeam tracing
 ## (wasm)
