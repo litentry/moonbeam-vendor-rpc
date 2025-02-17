@@ -30,6 +30,7 @@ use sp_blockchain::{Error as BlockChainError, HeaderBackend, HeaderMetadata};
 use sp_runtime::traits::Block as BlockT;
 use std::collections::HashMap;
 use std::{marker::PhantomData, sync::Arc};
+use std::ops::Deref;
 
 use moonbeam_rpc_primitives_txpool::{
 	Transaction as TransactionV2, TxPoolResponse, TxPoolRuntimeApi,
@@ -61,7 +62,7 @@ where
 			.graph
 			.validated_pool()
 			.ready()
-			.map(|in_pool_tx| Arc::try_unwrap(in_pool_tx.data().clone()).unwrap_or_else(|arc| (*arc).clone()))
+			.map(|in_pool_tx| in_pool_tx.data().deref().clone())
 			.collect();
 
 		// Collect transactions in the future validated pool.
@@ -70,7 +71,7 @@ where
 			.validated_pool()
 			.futures()
 			.iter()
-			.map(|(_hash, extrinsic)| Arc::try_unwrap(extrinsic.clone()).unwrap_or_else(|arc| (*arc).clone()))
+			.map(|(_hash, extrinsic)| extrinsic.deref().clone())
 			.collect();
 
 		// Use the runtime to match the (here) opaque extrinsics against ethereum transactions.
