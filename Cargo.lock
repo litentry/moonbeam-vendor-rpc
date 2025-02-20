@@ -1858,7 +1858,7 @@ checksum = "37909eebbb50d72f9059c3b6d82c0463f2ff062c9e95845c43a6c9c0355411be"
 [[package]]
 name = "fc-api"
 version = "1.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "async-trait",
  "fp-storage",
@@ -1870,7 +1870,7 @@ dependencies = [
 [[package]]
 name = "fc-consensus"
 version = "2.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "async-trait",
  "fp-consensus",
@@ -1886,7 +1886,7 @@ dependencies = [
 [[package]]
 name = "fc-db"
 version = "2.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "async-trait",
  "fc-api",
@@ -1907,7 +1907,7 @@ dependencies = [
 [[package]]
 name = "fc-mapping-sync"
 version = "2.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "fc-db",
  "fc-storage",
@@ -1928,7 +1928,7 @@ dependencies = [
 [[package]]
 name = "fc-rpc"
 version = "2.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "ethereum",
  "ethereum-types",
@@ -1982,7 +1982,7 @@ dependencies = [
 [[package]]
 name = "fc-rpc-core"
 version = "1.1.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "ethereum",
  "ethereum-types",
@@ -1997,7 +1997,7 @@ dependencies = [
 [[package]]
 name = "fc-storage"
 version = "1.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "ethereum",
  "ethereum-types",
@@ -2132,7 +2132,7 @@ dependencies = [
 [[package]]
 name = "fp-account"
 version = "1.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "hex",
  "impl-serde",
@@ -2151,7 +2151,7 @@ dependencies = [
 [[package]]
 name = "fp-consensus"
 version = "2.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "ethereum",
  "parity-scale-codec",
@@ -2162,7 +2162,7 @@ dependencies = [
 [[package]]
 name = "fp-evm"
 version = "3.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "environmental",
  "evm",
@@ -2178,7 +2178,7 @@ dependencies = [
 [[package]]
 name = "fp-rpc"
 version = "3.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "ethereum",
  "ethereum-types",
@@ -2194,7 +2194,7 @@ dependencies = [
 [[package]]
 name = "fp-storage"
 version = "2.0.0"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "parity-scale-codec",
  "serde",
@@ -5239,7 +5239,7 @@ dependencies = [
 [[package]]
 name = "pallet-evm"
 version = "6.0.0-dev"
-source = "git+https://github.com/polkadot-evm/frontier?rev=986eb1ad6ec69c16d05d142b7e731b4b69e3b409#986eb1ad6ec69c16d05d142b7e731b4b69e3b409"
+source = "git+https://github.com/polkadot-evm/frontier?branch=stable2412#4dddde8766dc23337ade83fbd5836dd9e4d7326d"
 dependencies = [
  "environmental",
  "evm",
